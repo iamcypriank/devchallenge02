@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    /* font-sizes */
+    --xl : 4rem ;
+    --l : 2rem;
+    --xm : 1.5rem;
+    --m : 1rem;
+    --s : .75rem;
+
+
+    --fontColor1 : #FFF;
+    /* background */
+    --bgColor1 : #404A65; 
+
+    --btnColor1 : #206FB1 ;
+    --btnAccentColor1 : ;
+}
+
+html{
+    font-family: "Kanit", sans-serif;
+    background-color: var(--bgColor1);
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+main{
+    padding: 5rem 1rem 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title-container{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.title{
+    font-weight: 900;
+    font-size: var(--xl);
+    color: var(--fontColor1);
+    text-shadow: 0px 0px 0px #35383f;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #35383f;
+}
+.text{
+    font-weight: 700;
+    color: var(--fontColor1);
+    font-size: var(--xm);
+}
+
+.coin-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.result{
+    color: var(--fontColor1);
+    font-size: var(--xm);
+    font-weight: 500;
+}
+
+.flip-btn{
+    font-size: var(--xm);
+    font-weight: 900;
+    color: var(--fontColor1);
+    background-color: var(--btnColor1);
+    padding: .5em 1em;
+    border: none;
+    box-shadow: 0px 4px 0px 0px #23649b;
+    border-radius: .25em;
+    transition: 200ms;
+}
+.flip-btn:active{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 0px 0px #FFF;
+    transition: 200ms;
+    
+}
+
+.coin-active{
+    transform: rotateX(2turn);
+    transition: 500ms;
+}
