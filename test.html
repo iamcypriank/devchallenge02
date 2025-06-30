@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .25rem;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+            flex-basis: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+<script>
+
+    let box = document.querySelector('.container');
+    // box.forEach((item)=>{
+    //     item.addEventListener('mouseover',function(e){
+    //         console.log(e.target);
+    //         e.target.style.backgroundColor = 'pink';
+    //         setTimeout(()=>{
+    //              e.target.style.backgroundColor = 'purple';
+    //         },1000)
+    //     });
+    // })
+
+    box.addEventListener('mouseover',function(e){
+        console.log(e.target);
+            if(e.target.className=='box'){
+                e.target.style.backgroundColor = 'pink';
+            setTimeout(()=>{
+                 e.target.style.backgroundColor = 'purple';
+            },500);
+            }
+    });
+
+</script>
+</html>
