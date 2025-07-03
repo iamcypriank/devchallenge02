@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background:var(--bgColor1) ;
+}
+
+
+:root{
+
+
+ 
+    
+    --bgColor1  : linear-gradient(232deg, #C04EE4 59%, #7629C6 100%);
+    --bgColor2 : #171E30;
+    --fontColor1 : white;
+    --fontColor2 : linear-gradient(232deg, #a446c1 59%, #7629C6 100%);
+
+
+    --fontL :2rem;
+    --fontXM : 1.25rem;
+    --fontM : 1rem;
+    --fontS : .75rem;
+    --fontBtn : 0.875rem;
+
+    --btnBgColor1 : #C950E7;
+
+}
+
+html{
+    font-family: "Outfit", sans-serif;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-board{
+    
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background-color: var(--bgColor2);
+    border-radius: 1em;
+}
+
+button{
+    padding: .75em 2.5em;
+    border-radius: .5em;
+    font-size: var(--fontBtn);
+    background-color: var(--btnBgColor1);
+    color: var(--fontColor1);
+    font-weight: 600;
+    letter-spacing: .5px;
+    border: none;
+    box-shadow: 0 .25rem 0  0 #7B258A;
+}
+
+h1.title{
+    text-align: center;
+    background: var(--fontColor2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--fontXM);
+}
+
+
+.board{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.screen-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.screen{
+    width: 100%;
+    height: 70px;
+    background-color: #4B5568;
+    border-radius: .5em;
+    box-shadow:  0 4px 0 0 black ;
+}
+
+.status{
+    display: flex;
+    color: var(--fontColor1);
+    justify-content: space-between;
+}
+
+.text{
+    font-size: var(--fontS);
+}
+
+
+.tries{
+    display: flex;
+    gap: .25rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lives{
+    height: 6px;
+    width: 6px;
+    background-color: #7629C6;
+    border-radius: 50%;
+}
+
+.mistakes{
+    display: none;
+}
+
+form{
+    display: flex;
+    gap: .5em;
+}
+
+input[type='text']{
+    height: 40px;
+    width: 40px;
+    border: 2px solid  #4B5568;
+    background: none;
+    border-radius: .5em;
+    display: flex;
+    padding: .25rem;
+    text-align: center;
+    font-size: var(--fontXM);
+    font-weight: 550;
+    color: var(--fontColor1);
+
+}
+
+.button-container{
+        margin-top: .5rem ;
+    display: flex;
+    gap: 1rem;
+}
