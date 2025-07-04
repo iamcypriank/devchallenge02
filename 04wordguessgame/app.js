@@ -46,8 +46,6 @@ const game = {
 
   check : function(input){
     input = input.toLowerCase();
-    console.log(input);
-    console.log(this.word);
     this.lives--;
     if(input==this.word){
       return 0;
@@ -82,7 +80,6 @@ const game = {
   reset : function(){
     this.lives = 0;
     this.word = '';
-    console.log('reset done!');
     renderGame();
   }
 }
@@ -141,7 +138,7 @@ function updateUI(result){
     let text = `
     <div class="result-text-container">
     <p class="result-text">Congrats!</p>
-    <p class="result-text">You won!</p>
+    <p class="result-text">🎉🥳You won!🎉🥳</p>
     <div>`;
     gameBoardEl.innerHTML = text;
     confetti();
@@ -152,14 +149,13 @@ function updateUI(result){
   }else if(result==-1){
     let text = `
     <div class="result-text-container">
-    <p class="result-text">Oops!</p>
+    <p class="result-text">｡°(°¯᷄◠¯᷅°)°｡</p>
     <p class="result-text">You lost!</p>
     <div>`;
     gameBoardEl.innerHTML = text;
-    confetti();
     setTimeout(()=>{
       startGame();
-    },2000);
+    },1500);
     return;
   }
   let lives = document.querySelectorAll('.lives');
@@ -196,7 +192,6 @@ function userInput(){
       const letter= input.value;
       //adding the input into string
       userWord+=letter;
-      console.log(`checking size of ${userWord}`);
       //checking if the word reached length of 6 
       if((userWord.trim()).length===6){
           //if yes checking if the user won and returns the result

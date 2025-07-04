@@ -10,7 +10,6 @@ function main(){
 
 
 
-
 // form1
 function form1(callback){
     let form1 = document.createElement('form');
