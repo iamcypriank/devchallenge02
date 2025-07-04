@@ -101,6 +101,14 @@ h1.title{
     background-color: #4B5568;
     border-radius: .5em;
     box-shadow:  0 4px 0 0 black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontL);
+    letter-spacing: 1rem;
+    font-weight: 500;
+    color: var(--fontColor1);
+
 }
 
 .status{
@@ -127,6 +135,10 @@ h1.title{
     width: 6px;
     background-color: #7629C6;
     border-radius: 50%;
+}
+
+.lost{
+    background-color: #4B5568;
 }
 
 .mistakes{
@@ -157,4 +169,12 @@ input[type='text']{
         margin-top: .5rem ;
     display: flex;
     gap: 1rem;
+}
+
+.result-text{
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+    color: var(--fontColor1);
+    font-weight: 700;
 }
