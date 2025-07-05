@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="music-player-container">
+            <div class="info">
+                <img src="" alt="" class="cover">
+                <div class="song-info">
+                    <div class="name"></div>
+                    <div class="author"></div>
+                </div>
+            </div>
+            <div class="control">
+                <div class="song-meter">
+                    <div class="time">
+                        <p class="small-text left"></p>
+                        <p class="small-text right"></p>
+                    </div>
+                    <div class="meter">
+                        <div class="nested-meter"> 
+                        </div>
+                         <input type="range" class="progress" min="0" max="100">
+                    </div>
+                </div>
+                <div class="controls">
+                    <img src="src/Stop_and_play_fill-1.svg" alt="" class="play-left">
+                    <img src="src/Play_fill.svg" alt="" class="play-pause play">
+                    <img src="src/Stop_and_play_fill.svg" alt="" class="play-right">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="app.js"></script>
+</html>
