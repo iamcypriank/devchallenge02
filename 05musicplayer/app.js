@@ -2,23 +2,36 @@
 
 const songs = [
     {
-        title: "Right Now",
-        author: "New Jeans",
-        src: "song1.mp3",
-        img: "cover1.jpg",
+        title: "Iris",
+        author: "The Goo Goo dolls",
+        src: "src/song/song1.mp3",
+        img: "src/cover/cover1.jpg",
     },
     {
-        title: "Different",
-        author: "Le-serrafim",
-        src: "src/song/songe.mp3",
-        img: "src/cover/cover3.jpg",
+        title: "A Change of Heart",
+        author: "The 1975",
+        src: "src/song/song2.mp3",
+        img: "src/cover/song2.jpg",
     },
     {
-        title: "Killin'it Girl",
-        author: "j-hope, GlO-Rilla ",
-        src: "song2.mp3",
-        img: "cover2.jpg",
+        title: "back to friends",
+        author: "Sombr ",
+        src: "src/cover/song3.mp3",
+        img: "src/cover/song3.jpg",
     },
+    {
+        title: "Do You Means",
+        author: "The Chainsmokers",
+        src: "src/cover/song4.mp3",
+        img: "src/cover/song4.jpg",
+    },
+    {
+        title: "War With Heaven",
+        author: "Keshi",
+        src: "src/cover/song5.mp3",
+        img: "src/cover/song5.jpg",
+    },
+    
     
 ]
 
